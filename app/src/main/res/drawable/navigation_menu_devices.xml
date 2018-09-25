@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:id="@+id/device_icn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:foregroundTint="@color/colorBottomNavigationInactive"
+            android:padding="10dp"
+            app:srcCompat="@drawable/mainscreen_device" />
+
+
+</selector>

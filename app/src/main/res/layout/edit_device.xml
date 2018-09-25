@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_device_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/edit_device_blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_bg"
+        android:backgroundTint="@color/bg_disable"
+        android:visibility="gone"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/device_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:tint="@color/bg_grey"
+                        app:srcCompat="@drawable/macro_pir" />
+
+                    <TextView
+                        android:id="@+id/device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="PIR Sensor"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/LoginLight"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:visibility="visible">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_weight="1"
+                            android:background="@drawable/settings_tabs_bg"
+                            android:backgroundTint="@color/bg_grey"
+                            android:drawableLeft="@drawable/devicemenu_room"
+                            android:drawablePadding="16dp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:paddingTop="6dp"
+                            android:text="Room"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingEnd="16dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/device_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/background_light"
+                                android:clickable="true"
+                                android:contextClickable="true"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="3dp"
+                                android:text="Room"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/device_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/settings_tabs_bg"
+                        android:backgroundTint="@color/bg_grey"
+                        android:drawableLeft="@drawable/devicemenu_event"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="Event"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/device_associate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/settings_tabs_bg"
+                        android:backgroundTint="@color/bg_grey"
+                        android:drawableLeft="@drawable/devicemenu_associate"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="Associate"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/device_configure"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/settings_tabs_bg"
+                        android:backgroundTint="@color/bg_grey"
+                        android:drawableLeft="@drawable/devicemenu_configure"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="Configure"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/device_security"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/settings_tabs_bg"
+                        android:backgroundTint="@color/bg_grey"
+                        android:drawableLeft="@drawable/devicemenu_security"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="Security and Notification"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/device_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/settings_tabs_bg"
+                        android:backgroundTint="@color/bg_grey"
+                        android:drawableLeft="@drawable/devicemenu_info"
+                        android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="Information"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/save_device"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tintMode="src_over"
+                        app:srcCompat="@drawable/macro_save" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Save"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/delete_device"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/macro_delete" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Delete"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

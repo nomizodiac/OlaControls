@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_devices"
+        android:icon="@drawable/mainscreen_device"
+        android:title="Devices"
+
+
+        />
+
+    <item
+        android:id="@+id/navigation_scenes"
+        android:icon="@drawable/mainscreen_scenes"
+        android:title="Scenes"/>
+
+    <item
+        android:id="@+id/navigation_macros"
+        android:icon="@drawable/mainscreen_smartrule"
+        android:title="Macros"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/mainscreen_settings"
+        android:title="Settings"/>
+
+</menu>

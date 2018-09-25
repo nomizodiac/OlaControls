@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:text="@string/settings_options"
+            android:textAlignment="center"
+            android:textColor="@color/LoginLight"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/settings_lockroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lock_room"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_lockscene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lock_scene"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_lockmacro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lock_macro"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_locksetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lock_setting"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_gateway_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gateway_lock"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_sunrise_sunset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/use_sunrise_and_sunset"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_camera_previews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_camera_previews"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_scene_reconfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scene_re_confirmed"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_gateway_siren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_gateway_siren"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_hidden_macros_scenes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_hidden_macros_and_scenes"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/settings_lost_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_lost_devices"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

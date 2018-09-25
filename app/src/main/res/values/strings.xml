@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Ola Controls</string>
+    <string name="pir_trigger_home">Allow PIR/Door Sensor to trigger home security Alarm</string>
+    <string name="pir_low_battery_notify">Allow to send notifications when battery is low</string>
+    <string name="pir_temper_notify">Allow to send notifications when temper has been triggered</string>
+    <string name="device_security"><![CDATA[Security & Notifiaton]]></string>
+    <string name="settings_options">Options</string>
+    <string name="lock_room">Lock Room</string>
+    <string name="lock_macro">Lock Macro</string>
+    <string name="lock_scene">Lock Scene</string>
+    <string name="scene_re_confirmed">Scene Re-Confirmed</string>
+    <string name="show_hidden_macros_and_scenes">Show Hidden Macros and Scenes</string>
+    <string name="show_camera_previews">Show Camera Previews</string>
+    <string name="gateway_lock">Gateway Lock</string>
+    <string name="lock_setting">Lock Setting</string>
+    <string name="use_sunrise_and_sunset">Use Sunrise and Sunset</string>
+    <string name="show_gateway_siren">Show Gateway Siren</string>
+    <string name="show_lost_devices">Show Lost Devices</string>
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="backup_settings">Backup Settings</string>
+    <string name="restore_settings">Restore Settings</string>
+    <string name="include_exclude">Include/Exclude</string>
+    <string name="change_password">Change Password</string>
+    <string name="reboot_gateway">Reboot Gateway</string>
+    <string name="other_options">Other Options</string>
+    <string name="todo">TODO</string>
+</resources>

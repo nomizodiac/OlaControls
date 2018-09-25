@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:text="Events"
+            android:textAlignment="center"
+            android:textColor="@color/LoginLight"
+            android:textSize="22sp" />
+
+        <GridView
+            android:id="@+id/eventpopup_eventList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/event_popup_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/macro_cross" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

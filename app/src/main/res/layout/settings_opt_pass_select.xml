@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:text="Change Password"
+            android:textAlignment="center"
+            android:textColor="@color/LoginLight"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/settings_ch_pass_gateway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/large_cell_rounded"
+            android:ems="10"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Change Gateway Password"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/settings_ch_pass_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/large_cell_rounded"
+            android:ems="10"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Change Lock Setting Password"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

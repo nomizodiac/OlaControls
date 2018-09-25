@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="20dp"
+            android:text="@string/device_security"
+            android:textAlignment="center"
+            android:textColor="@color/LoginLight"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/battery_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/pir_low_battery_notify"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+
+            <CheckBox
+                android:id="@+id/temper_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pir_temper_notify"
+                android:textSize="14sp"
+                android:theme="@style/dev_checkox" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

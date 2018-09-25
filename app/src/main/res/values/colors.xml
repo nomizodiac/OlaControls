@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#91bd5a</color>
+    <color name="colorPrimaryDark">#34573A</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="green_border">#47cc2f</color>
+    <color name="LoginLight">#91bd5a</color>
+    <color name="LoginDark">#34573A</color>
+    <color name="gray_bg">#aaa</color>
+    <color name="bg_grey">#8a8b89</color>
+    <color name="popup_bg">#ceedae</color>
+    <color name="bg_disable">#42282828</color>
+</resources>
